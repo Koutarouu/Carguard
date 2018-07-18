@@ -1,3 +1,12 @@
-page-home {
+@import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo');
 
+$Nanum: 'Nanum Myeongjo', serif;
+
+page-home {
+    .title {
+        color: #607D8B;
+        text-align: center;
+        font-family: $Nanum;
+    }
 }
+
