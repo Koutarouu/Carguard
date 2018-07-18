@@ -1,26 +1,22 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
-import { LoadingController } from 'ionic-angular';
 
+/**
+ * Generated class for the SearchBarComponent component.
+ *
+ * See https://angular.io/api/core/Component for more info on Angular
+ * Components.
+ */
 @Component({
-  selector: 'page-about',
-  templateUrl: 'about.html'
+  selector: 'search-bar',
+  templateUrl: 'search-bar.html'
 })
-export class AboutPage {
-
-  constructor(public navCtrl: NavController, public loadingCtrl: LoadingController) {
-    this.initializeItems();
-  }
-  
-  presentLoading() {
-    this.loadingCtrl.create({
-      content: 'Please wait...',
-      duration: 3000,
-      dismissOnPageChange: true
-    }).present();
-  }
+export class SearchBarComponent {
 
   items;
+
+  constructor() {
+    this.initializeItems();
+  }
 
   initializeItems() {
     this.items = [

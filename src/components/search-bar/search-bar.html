@@ -1,15 +1,15 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      About
+      Searchbars
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content>
   <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
   <ion-list>
-    <ion-item *ngFor="let item of items" (click)="presentLoading()">
+    <ion-item *ngFor="let item of items">
       {{ item }}
     </ion-item>
   </ion-list>
